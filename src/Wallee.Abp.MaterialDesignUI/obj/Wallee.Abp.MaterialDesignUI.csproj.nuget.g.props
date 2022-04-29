@@ -14,6 +14,8 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)volo.abp.aspnetcore.components.web\5.2.1\buildTransitive\Volo.Abp.AspNetCore.Components.Web.props" Condition="Exists('$(NuGetPackageRoot)volo.abp.aspnetcore.components.web\5.2.1\buildTransitive\Volo.Abp.AspNetCore.Components.Web.props')" />
     <Import Project="$(NuGetPackageRoot)mudblazor\6.0.9\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\6.0.9\buildTransitive\MudBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)configureawait.fody\3.3.1\build\ConfigureAwait.Fody.props" Condition="Exists('$(NuGetPackageRoot)configureawait.fody\3.3.1\build\ConfigureAwait.Fody.props')" />
   </ImportGroup>
 </Project>

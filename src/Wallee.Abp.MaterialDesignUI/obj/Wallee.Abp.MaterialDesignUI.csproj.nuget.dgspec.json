@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\WorkSpace\\MudBlazor主题开发\\Wallee.Abp.MaterialDesignUI\\Wallee.Abp.MaterialDesignUI\\src\\Wallee.Abp.MaterialDesignUI\\Wallee.Abp.MaterialDesignUI.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0",
       "restore": {
         "projectUniqueName": "D:\\WorkSpace\\MudBlazor主题开发\\Wallee.Abp.MaterialDesignUI\\Wallee.Abp.MaterialDesignUI\\src\\Wallee.Abp.MaterialDesignUI\\Wallee.Abp.MaterialDesignUI.csproj",
         "projectName": "Wallee.Abp.MaterialDesignUI",
@@ -44,13 +44,32 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.Web": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
             },
             "MudBlazor": {
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Volo.Abp.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Volo.Abp.Authorization": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Volo.Abp.Ddd.Application.Contracts": {
+              "target": "Package",
+              "version": "[5.2.1, )"
             }
           },
           "imports": [
