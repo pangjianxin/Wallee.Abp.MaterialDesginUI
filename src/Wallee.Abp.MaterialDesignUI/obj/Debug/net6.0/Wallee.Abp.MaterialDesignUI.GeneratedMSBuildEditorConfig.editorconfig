@@ -8,21 +8,29 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Wallee.Abp.MaterialDesignUI
 build_property.RootNamespace = Wallee.Abp.MaterialDesignUI
-build_property.ProjectDir = D:\WorkSpace\MudBlazor主题开发\Wallee.Abp.MaterialDesignUI\Wallee.Abp.MaterialDesignUI\src\Wallee.Abp.MaterialDesignUI\
+build_property.ProjectDir = D:\workspace\Wallee.Abp.MaterialDesignUI\src\Wallee.Abp.MaterialDesignUI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\WorkSpace\MudBlazor主题开发\Wallee.Abp.MaterialDesignUI\Wallee.Abp.MaterialDesignUI\src\Wallee.Abp.MaterialDesignUI
+build_property.MSBuildProjectDirectory = D:\workspace\Wallee.Abp.MaterialDesignUI\src\Wallee.Abp.MaterialDesignUI
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/WorkSpace/MudBlazor主题开发/Wallee.Abp.MaterialDesignUI/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/Components/AbpExtensibleDataGrid.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBYnBFeHRlbnNpYmxlRGF0YUdyaWQucmF6b3I=
+[D:/workspace/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/Components/PageAlert.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlQWxlcnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WorkSpace/MudBlazor主题开发/Wallee.Abp.MaterialDesignUI/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/Components/TableEntityActionsColumn.razor]
+[D:/workspace/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/Components/TableEntityActionsColumn.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJsZUVudGl0eUFjdGlvbnNDb2x1bW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WorkSpace/MudBlazor主题开发/Wallee.Abp.MaterialDesignUI/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/_Imports.razor]
+[D:/workspace/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/Components/ToolbarButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb29sYmFyQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/workspace/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/Components/UiPageProgress.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xVaVBhZ2VQcm9ncmVzcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/workspace/Wallee.Abp.MaterialDesignUI/src/Wallee.Abp.MaterialDesignUI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

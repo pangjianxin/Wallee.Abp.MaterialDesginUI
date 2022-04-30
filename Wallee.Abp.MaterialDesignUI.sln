@@ -5,7 +5,13 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46C49253-3040-4973-8AB0-CAD224853ED5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallee.Abp.MaterialDesignUI", "src\Wallee.Abp.MaterialDesignUI\Wallee.Abp.MaterialDesignUI.csproj", "{C42D0BDA-BD10-4E7D-9D4C-7F8E364B75B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wallee.Abp.MaterialDesignUI", "src\Wallee.Abp.MaterialDesignUI\Wallee.Abp.MaterialDesignUI.csproj", "{C42D0BDA-BD10-4E7D-9D4C-7F8E364B75B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{804D512B-BAE2-412A-B549-7D95ECC3B662}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MaterialDesignTheme", "MaterialDesignTheme", "{D134F334-1FBB-47A8-B8E1-500E6676A52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallee.Abp.AspnetCore.Components.Web.MaterialDesign", "modules\Wallee.Abp.AspnetCore.Components.Web.MaterialDesign\Wallee.Abp.AspnetCore.Components.Web.MaterialDesign.csproj", "{2F26B9BD-91DC-41F2-A8E5-1FE7D5E0B7B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,18 @@ Global
 		{C42D0BDA-BD10-4E7D-9D4C-7F8E364B75B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C42D0BDA-BD10-4E7D-9D4C-7F8E364B75B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C42D0BDA-BD10-4E7D-9D4C-7F8E364B75B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F26B9BD-91DC-41F2-A8E5-1FE7D5E0B7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F26B9BD-91DC-41F2-A8E5-1FE7D5E0B7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F26B9BD-91DC-41F2-A8E5-1FE7D5E0B7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F26B9BD-91DC-41F2-A8E5-1FE7D5E0B7B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C42D0BDA-BD10-4E7D-9D4C-7F8E364B75B6} = {46C49253-3040-4973-8AB0-CAD224853ED5}
+		{D134F334-1FBB-47A8-B8E1-500E6676A52A} = {804D512B-BAE2-412A-B549-7D95ECC3B662}
+		{2F26B9BD-91DC-41F2-A8E5-1FE7D5E0B7B5} = {D134F334-1FBB-47A8-B8E1-500E6676A52A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C1978F4-FD36-4B73-ABF7-B0C3C42C0FEE}

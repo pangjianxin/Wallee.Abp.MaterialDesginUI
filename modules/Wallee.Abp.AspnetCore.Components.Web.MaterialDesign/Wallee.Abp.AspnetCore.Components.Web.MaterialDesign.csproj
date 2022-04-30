@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<Import Project="..\..\common.props" />
+	<Import Project="..\..\configureawait.props" />
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.UI.Navigation" Version="5.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Wallee.Abp.MaterialDesignUI\Wallee.Abp.MaterialDesignUI.csproj" />
+	</ItemGroup>
+
+</Project>

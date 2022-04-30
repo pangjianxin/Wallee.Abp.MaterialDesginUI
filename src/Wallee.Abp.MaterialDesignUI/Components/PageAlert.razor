@@ -1,0 +1,65 @@
+﻿@using Volo.Abp.AspNetCore.Components.Alerts
+@using System.Collections.Specialized
+@using Microsoft.AspNetCore.Components.Routing
+
+@foreach (var message in _messages)
+{
+    <MudAlert Severity=@CalculateSeverity(message.Type)
+          ShowCloseIcon=true>
+        @message.Title
+    </MudAlert>
+}
+
+@code {
+
+    private readonly List<AlertMessage> _messages = new();
+
+    [Inject]
+    public IAlertManager AlertManager { get; set; }
+
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        AlertManager.Alerts.CollectionChanged += Alerts_CollectionChanged;
+        NavigationManager.LocationChanged += NavigationManager_LocationChanged;
+
+        _messages.AddRange(AlertManager.Alerts);
+    }
+
+    private void NavigationManager_LocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        AlertManager.Alerts.Clear();
+        _messages.Clear();
+    }
+
+    protected virtual void Alerts_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+    {
+        if (e.Action == NotifyCollectionChangedAction.Add)
+        {
+            foreach (var item in e.NewItems)
+            {
+                _messages.Add((AlertMessage)item);
+            }
+        }
+        InvokeAsync(StateHasChanged);
+    }
+
+    private Severity CalculateSeverity(AlertType alertType)
+    {
+        var severity = alertType switch
+        {
+            AlertType.Default => Severity.Normal,
+            AlertType.Primary => Severity.Info,
+            AlertType.Secondary => Severity.Normal,
+            AlertType.Success => Severity.Success,
+            AlertType.Danger => Severity.Error,
+            AlertType.Warning => Severity.Warning,
+            _ => Severity.Info
+        };
+        return severity;
+    }
+
+}
